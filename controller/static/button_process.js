@@ -11,7 +11,7 @@ buttonRecord.onclick = function () {
     buttonRecord.disabled = true;
     buttonStop.disabled = false;
 
-    // 禁用下载链接
+    // Tạo link tải về
     var downloadLink = document.getElementById("download");
     downloadLink.text = "";
     downloadLink.href = "";
@@ -40,8 +40,8 @@ buttonStop.onclick = function () {
 
             // 设置下载链接
             var downloadLink = document.getElementById("download");
-            downloadLink.text = "下载视频";
-            downloadLink.href = "//controller/static/video.avi";
+            downloadLink.text = "Tải file ghi hình";
+            downloadLink.href = "./controller/static/video.avi";
         }
     }
     xhr.open("POST", "/record_status");

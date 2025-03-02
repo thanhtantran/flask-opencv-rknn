@@ -1,8 +1,8 @@
 from flask import session, render_template, request, redirect, url_for, Response, jsonify
 from controller.modules.home import home_blu
 from controller.utils.camera import VideoCamera
-#import time
-#import cv2
+import time
+import cv2
 
 video_camera = None
 global_frame = None
@@ -25,11 +25,12 @@ def video_stream():
         video_camera = VideoCamera()
 
     while True:
-        start_time = time.time()
+        #start_time = time.time()
         frame = video_camera.get_frame()
-        end_time = time.time()
-        print('get_frame cost %f second' % (end_time - start_time))
-        time.sleep(0.01)
+        
+        #end_time = time.time()
+        #print('get_frame cost %f second' % (end_time - start_time))
+        #time.sleep(0.01)
         if frame is not None:
             global_frame = frame
             yield (b'--frame\r\n'
@@ -56,17 +57,16 @@ def record_status():
     global video_camera
     if video_camera is None:
         video_camera = VideoCamera()
-
     json = request.get_json()
 
     status = json['status']
 
     if status == "true":
         video_camera.start_record()
-        return jsonify(result="started")
+        #return jsonify(result="started")
     else:
         video_camera.stop_record()
-        return jsonify(result="stopped")
+        #return jsonify(result="stopped")
 
 
 # Nhan dien
