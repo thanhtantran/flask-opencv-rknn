@@ -739,3 +739,32 @@ Traceback (most recent call last):
 TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
 I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113 192.168.10.43 - - [02/Mar/2025 16:01:37] "[35m[1mPOST /process_status HTTP/1.1[0m" 500 -
 I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113 192.168.10.43 - - [02/Mar/2025 16:01:39] "[37mPOST /process_status HTTP/1.1[0m" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113 192.168.10.43 - - [02/Mar/2025 21:00:33] "[37mGET / HTTP/1.1[0m" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113 192.168.10.43 - - [02/Mar/2025 21:00:34] "[37mGET /video_viewer HTTP/1.1[0m" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113 192.168.10.43 - - [02/Mar/2025 21:01:27] "[37mGET / HTTP/1.1[0m" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113 192.168.10.43 - - [02/Mar/2025 21:01:28] "[37mGET /video_viewer HTTP/1.1[0m" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113 192.168.10.43 - - [02/Mar/2025 21:01:35] "[32mGET /logout HTTP/1.1[0m" 302 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113 192.168.10.43 - - [02/Mar/2025 21:01:35] "[37mGET /login HTTP/1.1[0m" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113 192.168.10.43 - - [02/Mar/2025 21:01:40] "[32mPOST /login HTTP/1.1[0m" 302 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113 192.168.10.43 - - [02/Mar/2025 21:01:40] "[37mGET / HTTP/1.1[0m" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113 192.168.10.43 - - [02/Mar/2025 21:01:40] "[37mGET /video_viewer HTTP/1.1[0m" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113 192.168.10.43 - - [02/Mar/2025 21:02:03] "[37mGET / HTTP/1.1[0m" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113 192.168.10.43 - - [02/Mar/2025 21:02:03] "[37mGET /video_viewer HTTP/1.1[0m" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113 192.168.10.43 - - [02/Mar/2025 21:02:21] "[37mGET / HTTP/1.1[0m" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113 192.168.10.43 - - [02/Mar/2025 21:02:22] "[37mGET /video_viewer HTTP/1.1[0m" 200 -
+E /usr/lib/python3/dist-packages/flask/app.py:1891 Exception on /process_status [POST]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113 192.168.10.43 - - [02/Mar/2025 21:02:27] "[35m[1mPOST /process_status HTTP/1.1[0m" 500 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113 192.168.10.43 - - [02/Mar/2025 21:02:35] "[37mPOST /process_status HTTP/1.1[0m" 200 -
