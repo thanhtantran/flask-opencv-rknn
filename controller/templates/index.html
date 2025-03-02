@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flask RKNN Object Detection </title>
+    <style>
+        body {
+            background-color: #484856;
+        }
+
+    </style>
+</head>
+<body>
+<h1 align="center" style="color: whitesmoke;">Flask+OpenCV+Rknn</h1>
+<div class="top">
+    <div class="recorder" id="recorder" align="center">
+        <button id="record" class="btn">Ghi hình</button>
+        <button id="stop" class="btn">Dừng ghi hình<button>
+        <button id="process" class="btn">Nhận diện</button>
+        <button id="pause" class="btn">Dừng nhận diện</button>
+        <input type="button" class="btn" value="Thoát"
+            onclick="javascrtpt:window.location.href='{{ url_for('user.logout') }}'">
+        <a id="download"></a>
+        <script type="text/javascript" src="{{ url_for('static', filename='button_process.js') }}"></script>
+    </div>
+</div>
+<img id="video" src="{{ url_for('home.video_viewer') }}">
+</body>
+</html>
