@@ -5,10 +5,14 @@ This code is a new version of my old code [rknn-single-thread-3566](!https://git
 Instruction to run
 
 Clone the code
-`admin@orangepi3b:~$ git clone https://github.com/thanhtantran/flask-opencv-rknn && cd flask-opencv-rknn`
+```
+admin@orangepi3b:~$ git clone https://github.com/thanhtantran/flask-opencv-rknn && cd flask-opencv-rknn
+```
 
 Install python pip and venv
-`admin@orangepi3b:~$ sudo apt install python3-venv python3-pip -y`
+```
+admin@orangepi3b:~$ sudo apt install python3-venv python3-pip -y
+```
 
 Check your python version
 ```
@@ -30,10 +34,14 @@ rknn-toolkit-lite2    1.5.2
 ```
 
 Copy the library
-`wget https://github.com/airockchip/rknn-toolkit2/raw/refs/heads/master/rknpu2/runtime/Linux/librknn_api/aarch64/librknnrt.so && sudo cp librknnrt.so /usr/lib`
+```
+wget https://github.com/airockchip/rknn-toolkit2/raw/refs/heads/master/rknpu2/runtime/Linux/librknn_api/aarch64/librknnrt.so && sudo cp librknnrt.so /usr/lib
+```
 
 Then run the inference
-`python main.py`
+```
+python main.py
+```
 
 The app will run on http://YOUR_ORANGEPI_IP:5000 Please open browser and navigate to it.
 
