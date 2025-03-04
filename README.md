@@ -10,12 +10,12 @@ Instruction to run
 
 Clone the code
 ```
-admin@orangepi3b:~$ git clone https://github.com/thanhtantran/flask-opencv-rknn && cd flask-opencv-rknn
+git clone https://github.com/thanhtantran/flask-opencv-rknn && cd flask-opencv-rknn
 ```
 
 Install python pip and venv
 ```
-admin@orangepi3b:~$ sudo apt install python3-venv python3-pip -y
+sudo apt install python3-venv python3-pip -y
 ```
 
 Check your python version
