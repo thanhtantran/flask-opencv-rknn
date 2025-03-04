@@ -67,6 +67,3 @@ https://gitee.com/Embedfire/flask-video-streaming-recorder
 https://github.com/thanhtantran/rknn-single-thread-3566
 
 https://github.com/airockchip/rknn-toolkit2
-
-https://github.com/airockchip/rknn-toolkit2/
-
