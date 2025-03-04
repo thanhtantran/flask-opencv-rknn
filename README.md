@@ -1,8 +1,8 @@
 # RKNN Object detection 1 core with RK3566, running on browser with Flask
 
-Tested SBC for this code: 
-- [Orange Pi 3B](!https://orangepi.net/product-tag/orange-pi-3b)
-- [Orange Pi CM4](!https://orangepi.vn/shop/orange-pi-cm4-phien-ban-1g8gb)
+Tested SBC: 
+[Orange Pi 3B](!https://orangepi.net/product-tag/orange-pi-3b)
+[Orange Pi CM4](!https://orangepi.vn/shop/orange-pi-cm4-phien-ban-1g8gb)
 
 This code is a new version of my old code [rknn-single-thread-3566](!https://github.com/thanhtantran/rknn-single-thread-3566) 
 
