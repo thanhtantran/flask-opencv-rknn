@@ -41,7 +41,7 @@ buttonStop.onclick = function () {
             // 设置下载链接
             var downloadLink = document.getElementById("download");
             downloadLink.text = "Tải file ghi hình";
-            downloadLink.href = "./controller/static/video.avi";
+            downloadLink.href = "./video.avi";
         }
     }
     xhr.open("POST", "/record_status");

@@ -768,3 +768,214 @@ Traceback (most recent call last):
 TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
 I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113 192.168.10.43 - - [02/Mar/2025 21:02:27] "[35m[1mPOST /process_status HTTP/1.1[0m" 500 -
 I /usr/lib/python3/dist-packages/werkzeug/_internal.py:113 192.168.10.43 - - [02/Mar/2025 21:02:35] "[37mPOST /process_status HTTP/1.1[0m" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.72:5000
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:11:16] "GET / HTTP/1.1" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:11:16] "GET /static/css/style.css HTTP/1.1" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:11:16] "GET /static/button_process.js HTTP/1.1" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:11:17] "GET /static/images/bg1.jpg HTTP/1.1" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:11:17] "GET /video_viewer HTTP/1.1" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.72:5000
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:11:47] "GET / HTTP/1.1" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:11:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:11:47] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:11:48] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:11:48] "GET /video_viewer HTTP/1.1" 200 -
+E /home/admin/.local/lib/python3.10/site-packages/flask/app.py:875 Exception on /process_status [POST]
+Traceback (most recent call last):
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'home.process_status' did not return a valid response. The function either returned None or ended without a return statement.
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:11:53] "[35m[1mPOST /process_status HTTP/1.1[0m" 500 -
+E /home/admin/.local/lib/python3.10/site-packages/flask/app.py:875 Exception on /record_status [POST]
+Traceback (most recent call last):
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'home.record_status' did not return a valid response. The function either returned None or ended without a return statement.
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:12:29] "[35m[1mPOST /record_status HTTP/1.1[0m" 500 -
+E /home/admin/.local/lib/python3.10/site-packages/flask/app.py:875 Exception on /record_status [POST]
+Traceback (most recent call last):
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'home.record_status' did not return a valid response. The function either returned None or ended without a return statement.
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:12:49] "[35m[1mPOST /record_status HTTP/1.1[0m" 500 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:12:52] "POST /process_status HTTP/1.1" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:12:56] "GET / HTTP/1.1" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:12:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:12:56] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:12:56] "GET /video_viewer HTTP/1.1" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:12:56] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+E /home/admin/.local/lib/python3.10/site-packages/flask/app.py:875 Exception on /process_status [POST]
+Traceback (most recent call last):
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'home.process_status' did not return a valid response. The function either returned None or ended without a return statement.
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:14:07] "[35m[1mPOST /process_status HTTP/1.1[0m" 500 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.72:5000
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:28:05] "GET / HTTP/1.1" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:28:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:28:05] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:28:06] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:28:10] "GET / HTTP/1.1" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:28:10] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:28:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:28:11] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:28:11] "GET /video_viewer HTTP/1.1" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:28:13] "GET /video_viewer HTTP/1.1" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.72:5000
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:32:25] "GET / HTTP/1.1" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:32:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:32:25] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:32:26] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:32:28] "GET /video_viewer HTTP/1.1" 200 -
+E /home/admin/.local/lib/python3.10/site-packages/flask/app.py:875 Exception on /process_status [POST]
+Traceback (most recent call last):
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'home.process_status' did not return a valid response. The function either returned None or ended without a return statement.
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:32:33] "[35m[1mPOST /process_status HTTP/1.1[0m" 500 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.72:5000
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:35:42] "GET / HTTP/1.1" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:35:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:35:42] "GET /static/button_process.js HTTP/1.1" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:35:43] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:35:43] "[35m[1mGET /video_viewer HTTP/1.1[0m" 500 -
+E /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 Error on request:
+Traceback (most recent call last):
+  File "/home/admin/.local/lib/python3.10/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/home/admin/.local/lib/python3.10/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/home/admin/.local/lib/python3.10/site-packages/werkzeug/wsgi.py", line 256, in __next__
+    return self._next()
+  File "/home/admin/.local/lib/python3.10/site-packages/werkzeug/wrappers/response.py", line 32, in _iter_encoded
+    for item in iterable:
+  File "/home/admin/flask-opencv-rknn/controller/modules/home/views.py", line 25, in video_stream
+    video_camera = VideoCamera()
+  File "/home/admin/flask-opencv-rknn/controller/utils/camera.py", line 38, in __init__
+    raise RuntimeError('Could not open camera.')
+RuntimeError: Could not open camera.
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.72:5000
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:36:22] "GET / HTTP/1.1" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:36:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:36:22] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:36:22] "[35m[1mGET /video_viewer HTTP/1.1[0m" 500 -
+E /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 Error on request:
+Traceback (most recent call last):
+  File "/home/admin/.local/lib/python3.10/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/home/admin/.local/lib/python3.10/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/home/admin/.local/lib/python3.10/site-packages/werkzeug/wsgi.py", line 256, in __next__
+    return self._next()
+  File "/home/admin/.local/lib/python3.10/site-packages/werkzeug/wrappers/response.py", line 32, in _iter_encoded
+    for item in iterable:
+  File "/home/admin/flask-opencv-rknn/controller/modules/home/views.py", line 25, in video_stream
+    video_camera = VideoCamera()
+  File "/home/admin/flask-opencv-rknn/controller/utils/camera.py", line 38, in __init__
+    raise RuntimeError('Could not open RTSP_URL.')
+RuntimeError: Could not open RTSP_URL.
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:36:23] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.72:5000
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:37:14] "GET / HTTP/1.1" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:37:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:37:14] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:37:15] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:37:18] "GET /video_viewer HTTP/1.1" 200 -
+E /home/admin/.local/lib/python3.10/site-packages/flask/app.py:875 Exception on /process_status [POST]
+Traceback (most recent call last):
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'home.process_status' did not return a valid response. The function either returned None or ended without a return statement.
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:37:29] "[35m[1mPOST /process_status HTTP/1.1[0m" 500 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:38:03] "GET / HTTP/1.1" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:38:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:38:03] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:38:03] "GET /video_viewer HTTP/1.1" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:38:03] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.72:5000
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:38:57] "GET / HTTP/1.1" 200 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:38:57] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:38:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:38:58] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:39:00] "GET /video_viewer HTTP/1.1" 200 -
+E /home/admin/.local/lib/python3.10/site-packages/flask/app.py:875 Exception on /process_status [POST]
+Traceback (most recent call last):
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/home/admin/.local/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'home.process_status' did not return a valid response. The function either returned None or ended without a return statement.
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:39:06] "[35m[1mPOST /process_status HTTP/1.1[0m" 500 -
+I /home/admin/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.10.43 - - [04/Mar/2025 12:39:22] "POST /process_status HTTP/1.1" 200 -

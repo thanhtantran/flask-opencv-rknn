@@ -3,6 +3,8 @@ import threading
 import time
 from controller.utils.rknn_image import *
 
+RTSP_URL = "rtsp://admin:Ttt281981*@192.168.10.27:554/h264_stream"
+
 class RecordingThread(threading.Thread):
     def __init__(self, name, camera):
         threading.Thread.__init__(self)
@@ -11,7 +13,7 @@ class RecordingThread(threading.Thread):
 
         self.cap = camera
         fourcc = cv2.VideoWriter_fourcc(*'MJPG')
-        self.out = cv2.VideoWriter('./controller/static/video.avi', fourcc, 20.0, (640, 640))
+        self.out = cv2.VideoWriter('./video.avi', fourcc, 20.0, (640, 640))
 
     def run(self):
         while self.isRunning:
@@ -29,10 +31,11 @@ class RecordingThread(threading.Thread):
 
 class VideoCamera(object):
     def __init__(self):
-        self.cap = cv2.VideoCapture(0)
+        self.cap = cv2.VideoCapture(RTSP_URL)
+        
 
         if not self.cap.isOpened():
-            raise RuntimeError('Could not open camera.')
+            raise RuntimeError('Could not open RTSP_URL.')
 
         # Create RKNN object
         self.rknn_lite = RKNNLite()
@@ -65,15 +68,15 @@ class VideoCamera(object):
     def get_frame(self):
         ret, self.frame = self.cap.read()
         if ret:
-            if self.is_process:
-                self.frame = cv2.resize(self.frame, (IMG_SIZE, IMG_SIZE))
-                self.image = cv2.cvtColor(self.frame, cv2.COLOR_BGR2RGB)
-                self.outputs = self.rknn_lite.inference(inputs=[self.image])
-                self.frame = process_image(self.image, self.outputs)
+          self.frame = cv2.resize(self.frame, (640, 640))
+          if self.is_process:
+              self.image = cv2.cvtColor(self.frame, cv2.COLOR_BGR2RGB)
+              self.outputs = self.rknn_lite.inference(inputs=[self.image])
+              self.frame = process_image(self.image, self.outputs)
 
-            if self.frame is not None:
-                ret, image = cv2.imencode('.jpg', self.frame)
-                return image.tobytes()
+          if self.frame is not None:
+              ret, image = cv2.imencode('.jpg', self.frame)
+              return image.tobytes()
         else:
             return None
 
