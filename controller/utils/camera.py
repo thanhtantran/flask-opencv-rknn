@@ -31,7 +31,7 @@ class RecordingThread(threading.Thread):
 
 class VideoCamera(object):
     def __init__(self):
-        self.cap = cv2.VideoCapture(RTSP_URL)
+        self.cap = cv2.VideoCapture(0)
         
 
         if not self.cap.isOpened():
