@@ -5,6 +5,7 @@ Tested SBC:
 - [Orange Pi CM4](https://orangepi.vn/shop/orange-pi-cm4-phien-ban-1g8gb)
 
 This code is a new version of my old code [rknn-single-thread-3566](https://github.com/thanhtantran/rknn-single-thread-3566) 
+![ChatGPT Image Apr 21, 2025, 04_56_51 PM](https://github.com/user-attachments/assets/73ec0602-6a74-4b0a-b6f5-aa77eea09b42)
 
 Instruction to run
 
