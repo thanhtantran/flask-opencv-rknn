@@ -5,7 +5,7 @@ import numpy as np
 import cv2
 from rknnlite.api import RKNNLite
 
-RKNN_MODEL = './controller/utils/yolov5s.rknn'
+RKNN_MODEL = './models/yolov5.rknn'
 OBJ_THRESH = 0.25
 NMS_THRESH = 0.45
 IMG_SIZE = 640

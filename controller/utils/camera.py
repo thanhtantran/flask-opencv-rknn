@@ -3,7 +3,7 @@ import threading
 import time
 from controller.utils.rknn_image import *
 
-RTSP_URL = "rtsp://admin:Ttt281981*@192.168.10.27:554/h264_stream"
+RTSP_URL = "rtsp://admin:password@192.168.10.27:554/h264_stream"
 
 class RecordingThread(threading.Thread):
     def __init__(self, name, camera):
