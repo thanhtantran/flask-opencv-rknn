@@ -28,7 +28,7 @@ Python 3.10.12
 Download the specific rknn-toolkit-lite2 1.5.2 for your python version. (Pls note that new  rknn-toolkit-lite2 2.3.0 will not work since the model is converted base on old rknn-toolkit2)
 ```
 wget https://github.com/airockchip/rknn-toolkit2/raw/refs/heads/v1.5.2/rknn_toolkit_lite2/packages/rknn_toolkit_lite2-1.5.2-cp310-cp310-linux_aarch64.whl
-pip install rknn_toolkit_lite2-2.3.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+pip install rknn_toolkit_lite2-1.5.2-cp310-cp310-linux_aarch64.whl
 pip install flask opencv-contrib-python 
 ```
 
