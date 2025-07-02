@@ -55,8 +55,10 @@ class VideoCamera(object):
         self.frame = None
         self.outputs = None
 
-        self.is_process= False
-
+        self.processing_thread = None
+        self.processed_frame = None
+        self.is_process = False
+        
         # load rknn
         self.load_rknn()
 
@@ -67,17 +69,42 @@ class VideoCamera(object):
     def get_frame(self):
         ret, self.frame = self.cap.read()
         if ret:
-          self.frame = cv2.resize(self.frame, (640, 640))
-          if self.is_process:
-              self.image = cv2.cvtColor(self.frame, cv2.COLOR_BGR2RGB)
-              self.outputs = self.rknn_lite.inference(inputs=[self.image])
-              self.frame = process_image(self.image, self.outputs)
+            self.frame = cv2.resize(self.frame, (640, 640))
+            
+            # Use the processed frame if available, otherwise use the original frame
+            display_frame = self.processed_frame if self.is_process and self.processed_frame is not None else self.frame
+            
+            if display_frame is not None:
+                ret, image = cv2.imencode('.jpg', display_frame)
+                return image.tobytes()
+        return None
 
-          if self.frame is not None:
-              ret, image = cv2.imencode('.jpg', self.frame)
-              return image.tobytes()
-        else:
-            return None
+    def start_process(self):
+        self.is_process = True
+        if self.processing_thread is None or not self.processing_thread.is_alive():
+            self.processing_thread = threading.Thread(target=self.rknn_process, daemon=True)
+            self.processing_thread.start()
+
+    def stop_process(self):
+        self.is_process = False
+        self.processed_frame = None
+
+    def rknn_process(self):
+        while self.is_process:
+            if self.frame is not None:
+                # Create a copy of the frame to avoid race conditions
+                current_frame = self.frame.copy()
+                
+                # Process the frame
+                image = cv2.cvtColor(current_frame, cv2.COLOR_BGR2RGB)
+                outputs = self.rknn_lite.inference(inputs=[image])
+                
+                # Only update processed_frame if we're still processing
+                if self.is_process:
+                    self.processed_frame = process_image(image, outputs)
+            
+            # Add a small sleep to prevent CPU overuse
+            time.sleep(0.01)
 
     def start_record(self):
         self.is_record = True
@@ -103,22 +130,6 @@ class VideoCamera(object):
         if ret != 0:
             print('Init runtime environment failed!')
             exit(ret)
-
-    def start_process(self):
-        self.is_process = True
-        #threading.Thread(target=self.rknn_process, daemon=True, args=()).start()
-
-    def stop_process(self):
-        self.is_process = False
-        #self.outputs = None
-        #self.image = None
-
-    def rknn_process(self):
-        if self.is_process:
-            print('--> is_process true')
-            self.outputs = self.rknn_lite.inference(inputs=[self.frame])
-        else:
-            self.outputs = None
 
 
             
