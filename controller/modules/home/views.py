@@ -36,8 +36,13 @@ def video_stream():
             yield (b'--frame\r\n'
                    b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
         else:
-            yield (b'--frame\r\n'
-                   b'Content-Type: image/jpeg\r\n\r\n' + global_frame + b'\r\n\r\n')
+            # Check if global_frame is None before using it
+            if global_frame is not None:
+                yield (b'--frame\r\n'
+                       b'Content-Type: image/jpeg\r\n\r\n' + global_frame + b'\r\n\r\n')
+            else:
+                # Provide a default empty image or skip this iteration
+                continue  # Skip this iteration if no frame is available
 
 
 # Xem hinh
