@@ -1,0 +1,318 @@
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.88.122:5000
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [01/Jul/2025 18:00:14] "GET / HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.88.122:5000
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [01/Jul/2025 18:04:09] "GET / HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.88.122:5000
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [01/Jul/2025 18:07:05] "GET / HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.88.122:5000
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:32:57] "GET / HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:32:57] "GET /static/button_process.js HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:32:57] "GET /static/css/style.css HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:32:58] "GET /static/images/bg1.jpg HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.88.122:5000
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:35:49] "GET / HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:35:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:35:49] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:35:49] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.88.122:5000
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:36:57] "GET / HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:36:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:36:57] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:36:57] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:36:58] "[35m[1mGET /video_viewer HTTP/1.1[0m" 500 -
+E /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 Error on request:
+Traceback (most recent call last):
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/wsgi.py", line 256, in __next__
+    return self._next()
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/wrappers/response.py", line 32, in _iter_encoded
+    for item in iterable:
+  File "/home/cat/flask-opencv-rknn/controller/modules/home/views.py", line 39, in video_stream
+    yield (b'--frame\r\n'
+TypeError: can't concat NoneType to bytes
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.88.122:5000
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:42:52] "GET / HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:42:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:42:52] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:42:53] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+E /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py:875 Exception on /process_status [POST]
+Traceback (most recent call last):
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'home.process_status' did not return a valid response. The function either returned None or ended without a return statement.
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:46:40] "[35m[1mPOST /process_status HTTP/1.1[0m" 500 -
+E /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py:875 Exception on /record_status [POST]
+Traceback (most recent call last):
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'home.record_status' did not return a valid response. The function either returned None or ended without a return statement.
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:46:44] "[35m[1mPOST /record_status HTTP/1.1[0m" 500 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:46:45] "[32mGET /logout HTTP/1.1[0m" 302 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:46:45] "GET /login HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:46:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:46:46] "GET /static/images/adm.png HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:46:46] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:46:46] "GET /static/images/key.png HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:46:46] "GET /static/images/pass.png HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:46:47] "POST /login HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:46:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:46:54] "POST /login HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:46:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:46:56] "POST /login HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:46:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:47:01] "POST /login HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:47:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:47:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:47:08] "GET / HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:47:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:47:08] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.88.122:5000
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:51:59] "GET / HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:51:59] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:51:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:52:00] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:52:00] "GET /video_viewer HTTP/1.1" 200 -
+E /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py:875 Exception on /process_status [POST]
+Traceback (most recent call last):
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'home.process_status' did not return a valid response. The function either returned None or ended without a return statement.
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:52:04] "[35m[1mPOST /process_status HTTP/1.1[0m" 500 -
+E /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 Error on request:
+Traceback (most recent call last):
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/wsgi.py", line 256, in __next__
+    return self._next()
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/wrappers/response.py", line 32, in _iter_encoded
+    for item in iterable:
+  File "/home/cat/flask-opencv-rknn/controller/modules/home/views.py", line 29, in video_stream
+    frame = video_camera.get_frame()
+  File "/home/cat/flask-opencv-rknn/controller/utils/camera.py", line 74, in get_frame
+    self.frame = process_image(self.image, self.outputs)
+  File "/home/cat/flask-opencv-rknn/controller/utils/rknn_image.py", line 228, in process_image
+    input1_data = outputs[1]
+IndexError: list index out of range
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.88.122:5000
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:54:56] "GET / HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:54:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:54:56] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:54:57] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:54:57] "GET /video_viewer HTTP/1.1" 200 -
+E /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py:875 Exception on /record_status [POST]
+Traceback (most recent call last):
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'home.record_status' did not return a valid response. The function either returned None or ended without a return statement.
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:55:01] "[35m[1mPOST /record_status HTTP/1.1[0m" 500 -
+E /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py:875 Exception on /record_status [POST]
+Traceback (most recent call last):
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'home.record_status' did not return a valid response. The function either returned None or ended without a return statement.
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:55:03] "[35m[1mPOST /record_status HTTP/1.1[0m" 500 -
+E /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py:875 Exception on /process_status [POST]
+Traceback (most recent call last):
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'home.process_status' did not return a valid response. The function either returned None or ended without a return statement.
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:55:05] "[35m[1mPOST /process_status HTTP/1.1[0m" 500 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:55:21] "GET / HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:55:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:55:21] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:55:21] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.88.122:5000
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:55:40] "GET / HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:55:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:55:40] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:55:40] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:55:42] "GET /video_viewer HTTP/1.1" 200 -
+E /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py:875 Exception on /process_status [POST]
+Traceback (most recent call last):
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'home.process_status' did not return a valid response. The function either returned None or ended without a return statement.
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:55:44] "[35m[1mPOST /process_status HTTP/1.1[0m" 500 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.88.122:5000
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 127.0.0.1 - - [02/Jul/2025 16:58:22] "[32mGET / HTTP/1.1[0m" 302 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 127.0.0.1 - - [02/Jul/2025 16:58:22] "GET /login HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 127.0.0.1 - - [02/Jul/2025 16:58:32] "[32mGET / HTTP/1.1[0m" 302 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 127.0.0.1 - - [02/Jul/2025 16:58:32] "GET /login HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 127.0.0.1 - - [02/Jul/2025 16:58:40] "[32mGET / HTTP/1.1[0m" 302 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 127.0.0.1 - - [02/Jul/2025 16:58:40] "GET /login HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 127.0.0.1 - - [02/Jul/2025 16:58:43] "[32mGET / HTTP/1.1[0m" 302 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 127.0.0.1 - - [02/Jul/2025 16:58:43] "GET /login HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 127.0.0.1 - - [02/Jul/2025 16:58:44] "[32mGET / HTTP/1.1[0m" 302 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 127.0.0.1 - - [02/Jul/2025 16:58:44] "GET /login HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 127.0.0.1 - - [02/Jul/2025 16:58:45] "[32mGET / HTTP/1.1[0m" 302 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 127.0.0.1 - - [02/Jul/2025 16:58:45] "GET /login HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 127.0.0.1 - - [02/Jul/2025 16:58:46] "[32mGET / HTTP/1.1[0m" 302 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 127.0.0.1 - - [02/Jul/2025 16:58:46] "GET /login HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:58:59] "GET / HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:58:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:58:59] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:59:00] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:59:00] "GET /video_viewer HTTP/1.1" 200 -
+E /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py:875 Exception on /process_status [POST]
+Traceback (most recent call last):
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'home.process_status' did not return a valid response. The function either returned None or ended without a return statement.
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 16:59:11] "[35m[1mPOST /process_status HTTP/1.1[0m" 500 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.88.122:5000
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 17:00:16] "GET / HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 17:00:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 17:00:16] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 17:00:16] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 17:00:18] "GET /video_viewer HTTP/1.1" 200 -
+E /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py:875 Exception on /process_status [POST]
+Traceback (most recent call last):
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'home.process_status' did not return a valid response. The function either returned None or ended without a return statement.
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 17:00:28] "[35m[1mPOST /process_status HTTP/1.1[0m" 500 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.88.122:5000
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 17:01:54] "GET / HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 17:01:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 17:01:54] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 17:01:54] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 17:01:56] "GET /video_viewer HTTP/1.1" 200 -
+E /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py:875 Exception on /process_status [POST]
+Traceback (most recent call last):
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'home.process_status' did not return a valid response. The function either returned None or ended without a return statement.
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 17:03:21] "[35m[1mPOST /process_status HTTP/1.1[0m" 500 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.88.122:5000
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.88.122:5000
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 [33mPress CTRL+C to quit[0m
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 17:05:53] "GET / HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 17:05:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 17:05:53] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 17:05:54] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 17:05:55] "GET /video_viewer HTTP/1.1" 200 -
+I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 17:06:37] "POST /process_status HTTP/1.1" 200 -

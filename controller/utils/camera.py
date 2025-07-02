@@ -31,11 +31,10 @@ class RecordingThread(threading.Thread):
 
 class VideoCamera(object):
     def __init__(self):
-        self.cap = cv2.VideoCapture(0)
-        
+        self.cap = cv2.VideoCapture(9)
 
         if not self.cap.isOpened():
-            raise RuntimeError('Could not open RTSP_URL.')
+            raise RuntimeError('Could not open video.')
 
         # Create RKNN object
         self.rknn_lite = RKNNLite()
