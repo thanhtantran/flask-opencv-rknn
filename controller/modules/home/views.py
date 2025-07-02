@@ -68,10 +68,10 @@ def record_status():
 
     if status == "true":
         video_camera.start_record()
-        #return jsonify(result="started")
+        return jsonify(result="started")  # Uncommented this line
     else:
         video_camera.stop_record()
-        #return jsonify(result="stopped")
+        return jsonify(result="stopped")  # Uncommented this line
 
 
 # Nhan dien
@@ -87,7 +87,7 @@ def process_status():
 
     if process_status == "true":
         video_camera.start_process()
-        #return jsonify(result="process")
+        return jsonify(result="process")  # Uncommented this line
     else:
         video_camera.stop_process()
         return jsonify(result="pause")
