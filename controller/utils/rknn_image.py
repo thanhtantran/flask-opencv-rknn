@@ -245,5 +245,5 @@ def process_image(image, outputs):
     image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
     if boxes is not None:
         draw(image, boxes, scores, classes)
-        return image
+    return image  # Always return the image, whether boxes were drawn or not
         
