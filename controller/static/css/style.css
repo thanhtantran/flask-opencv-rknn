@@ -345,3 +345,172 @@ label.lbl-3 {
 	}
 }
 /*--end-responsive-design--*/
+
+.app{
+	width: min(1100px, calc(100% - 32px));
+	margin: 28px auto;
+	padding: 18px;
+	border-radius: 18px;
+	background: rgba(17, 17, 22, 0.70);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+}
+
+.app-header{
+	padding: 8px 10px 14px;
+}
+
+.app-title{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 600;
+	font-size: 28px;
+	letter-spacing: 0.3px;
+	color: #ffffff;
+}
+
+.app-main{
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 14px;
+}
+
+.panel{
+	border-radius: 16px;
+	background: rgba(35, 35, 46, 0.75);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	padding: 14px;
+}
+
+.recorder{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	height: 44px;
+	padding: 0 14px;
+	border-radius: 12px;
+	border: 1px solid transparent;
+	background: rgba(255,255,255,0.10);
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	user-select: none;
+	text-decoration: none;
+}
+
+.btn:hover{
+	background: rgba(255,255,255,0.16);
+}
+
+.btn:active{
+	transform: translateY(1px);
+}
+
+.btn:disabled{
+	opacity: 0.45;
+	cursor: not-allowed;
+}
+
+.btn-primary{
+	background: linear-gradient(135deg, #3ea751, #2fc6a2);
+	border-color: rgba(255,255,255,0.12);
+}
+
+.btn-primary:hover{
+	background: linear-gradient(135deg, #46b85a, #35d2ad);
+}
+
+.btn-secondary{
+	background: linear-gradient(135deg, #50506a, #2f2f3e);
+	border-color: rgba(255,255,255,0.10);
+}
+
+.btn-ghost{
+	background: transparent;
+	border-color: rgba(255,255,255,0.16);
+}
+
+.download-link{
+	color: #ffffff;
+	font-weight: 600;
+	padding: 10px 12px;
+	border-radius: 12px;
+	background: rgba(255,255,255,0.08);
+	text-decoration: none;
+}
+
+.download-link:empty{
+	display: none;
+}
+
+.status{
+	margin-top: 10px;
+	text-align: center;
+	font-size: 14px;
+	color: rgba(255,255,255,0.85);
+	min-height: 18px;
+}
+
+.status[data-type="success"]{
+	color: #b9f6ca;
+}
+
+.status[data-type="error"]{
+	color: #ffb4b4;
+}
+
+.video-frame{
+	border-radius: 16px;
+	overflow: hidden;
+	background: rgba(0,0,0,0.35);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#video{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+@media (min-width: 900px){
+	.app-main{
+		grid-template-columns: 1fr;
+	}
+
+	.panel-controls{
+		padding: 16px;
+	}
+}
+
+@media (max-width: 520px){
+	.app{
+		margin: 18px auto;
+		padding: 14px;
+	}
+
+	.app-title{
+		font-size: 22px;
+	}
+
+	.btn{
+		width: 100%;
+	}
+
+	.download-link{
+		width: 100%;
+		text-align: center;
+	}
+}

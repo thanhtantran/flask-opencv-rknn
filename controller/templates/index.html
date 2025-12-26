@@ -14,7 +14,7 @@
     function hideURLbar() {
         window.scrollTo(0, 1);
     } </script>
-    <link href="../static/css/style.css" rel='stylesheet' type='text/css'/>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel='stylesheet' type='text/css'/>
     <!-- -->
     <link href='http://fonts.useso.com/css?family=PT+Sans:400,700,400italic,700italic|Oswald:400,300,700'
           rel='stylesheet' type='text/css'>
@@ -23,23 +23,33 @@
     <script src="http://ajax.useso.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 <body>
-<h1 align="center">Flask+OpenCV+Rknn</h1>
-<div class="top">
-    <div class="recorder" id="recorder" align="center">
-        <button id="record" class="btn">Ghi hình</button>
-        <button id="stop" class="btn">Dừng ghi hình<button>
-        <button id="process" class="btn">Nhận diện</button>
-        <button id="pause" class="btn">Dừng nhận diện</button>
-        <input type="button" class="btn" value="Thoát"
-            onclick="javascrtpt:window.location.href='{{ url_for('user.logout') }}'">
-        <a id="download"></a>
-        <script type="text/javascript" src="{{ url_for('static', filename='button_process.js') }}"></script>
-    </div>
-</div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<div align="center">
-<img id="video" src="{{ url_for('home.video_viewer') }}">
+<div class="app">
+    <header class="app-header">
+        <h1 class="app-title">Flask+OpenCV+RKNN</h1>
+    </header>
+
+    <main class="app-main">
+        <section class="panel panel-controls">
+            <div class="recorder" id="recorder">
+                <button id="record" class="btn btn-primary">Ghi hình</button>
+                <button id="stop" class="btn btn-secondary">Dừng ghi hình</button>
+                <button id="process" class="btn btn-primary">Nhận diện</button>
+                <button id="pause" class="btn btn-secondary">Dừng nhận diện</button>
+                <a class="btn btn-ghost" href="{{ url_for('user.logout') }}">Thoát</a>
+                <a id="download" class="download-link"></a>
+            </div>
+
+            <div id="status" class="status" aria-live="polite"></div>
+
+            <script type="text/javascript" src="{{ url_for('static', filename='button_process.js') }}"></script>
+        </section>
+
+        <section class="panel panel-video">
+            <div class="video-frame">
+                <img id="video" src="{{ url_for('home.video_viewer') }}" alt="Video stream">
+            </div>
+        </section>
+    </main>
 </div>
 </body>
 </html>
