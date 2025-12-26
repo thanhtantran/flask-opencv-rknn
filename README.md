@@ -57,14 +57,13 @@ python main.py
 
 The app will run on http://YOUR_ORANGEPI_IP:5000 Please open browser and navigate to it.
 
-![flask-rknn-object-detection](https://github.com/user-attachments/assets/90806c89-2466-4349-93ce-f9c2a9147628)
+![flask-rknn-opencv1](https://github.com/user-attachments/assets/6c2598ff-78f3-4596-994f-aa420f06dba6)
 
 The default username and password is orangepi/orangepi.vn
 
 You can Record / Ghi hình or Nhận diện / Run Detection. Thoát / Logout
 
-![flask-rknn-object-detection2](https://github.com/user-attachments/assets/ed86a3b3-94f7-44fa-aec5-6ff7d4c1d239)
-
+![flask-rknn-opencv2](https://github.com/user-attachments/assets/1dd485f5-9eb5-4a05-91cf-1fc7f7e574ef)
 
 # Reference
 
