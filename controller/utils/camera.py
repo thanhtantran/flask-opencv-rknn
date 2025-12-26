@@ -1,19 +1,27 @@
 import cv2
 import threading
 import time
+from datetime import datetime
+from pathlib import Path
+
 from controller.utils.rknn_image import *
 
 RTSP_URL = "rtsp://admin:password@192.168.10.27:554/h264_stream"
 
+CONTROLLER_DIR = Path(__file__).resolve().parents[1]
+RECORDINGS_DIR = CONTROLLER_DIR / "static" / "recordings"
+
 class RecordingThread(threading.Thread):
-    def __init__(self, name, camera):
+    def __init__(self, name, camera, output_path):
         threading.Thread.__init__(self)
         self.name = name
         self.isRunning = True
 
         self.cap = camera
+        self.output_path = str(output_path)
+
         fourcc = cv2.VideoWriter_fourcc(*'MJPG')
-        self.out = cv2.VideoWriter('./video.avi', fourcc, 20.0, (640, 640))
+        self.out = cv2.VideoWriter(self.output_path, fourcc, 20.0, (IMG_SIZE, IMG_SIZE))
 
     def run(self):
         while self.isRunning:
@@ -107,15 +115,28 @@ class VideoCamera(object):
             time.sleep(0.01)
 
     def start_record(self):
+        if self.recordingThread is not None and self.recordingThread.is_alive():
+            return getattr(self, "last_record_filename", None)
+
+        RECORDINGS_DIR.mkdir(parents=True, exist_ok=True)
+        filename = f"video_{datetime.now().strftime('%Y%m%d_%H%M%S')}.avi"
+        output_path = RECORDINGS_DIR / filename
+
+        self.last_record_filename = filename
         self.is_record = True
-        self.recordingThread = RecordingThread("Video Recording Thread", self.cap)
+        self.recordingThread = RecordingThread("Video Recording Thread", self.cap, output_path)
         self.recordingThread.start()
+        return filename
 
     def stop_record(self):
         self.is_record = False
 
-        if self.recordingThread != None:
+        if self.recordingThread is not None:
             self.recordingThread.stop()
+            self.recordingThread.join(timeout=5)
+            self.recordingThread = None
+
+        return getattr(self, "last_record_filename", None)
 
     def load_rknn(self):
         # load RKNN model

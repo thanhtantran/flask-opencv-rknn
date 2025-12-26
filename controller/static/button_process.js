@@ -13,11 +13,20 @@ function setStatus(message, type) {
 
 function postJson(url, body, onSuccess) {
     var xhr = new XMLHttpRequest();
+    xhr.responseType = "json";
     xhr.onreadystatechange = function () {
         if (xhr.readyState !== 4) return;
 
         if (xhr.status >= 200 && xhr.status < 300) {
-            onSuccess(xhr.responseText);
+            var data = xhr.response;
+            if (!data) {
+                try {
+                    data = JSON.parse(xhr.responseText);
+                } catch (e) {
+                    data = null;
+                }
+            }
+            onSuccess(data, xhr.responseText);
             return;
         }
 
@@ -43,8 +52,12 @@ buttonRecord.onclick = function () {
     }
 
     setStatus("Đang bắt đầu ghi hình...", "");
-    postJson("/record_status", {status: "true"}, function (text) {
-        setStatus(text || "Đã bắt đầu ghi hình", "success");
+    postJson("/record_status", {status: "true"}, function (data, rawText) {
+        if (data && data.result === "started") {
+            setStatus("Đã bắt đầu ghi hình", "success");
+            return;
+        }
+        setStatus(rawText || "Đã bắt đầu ghi hình", "success");
     });
 };
 
@@ -53,14 +66,19 @@ buttonStop.onclick = function () {
     buttonStop.disabled = true;
 
     setStatus("Đang dừng ghi hình...", "");
-    postJson("/record_status", {status: "false"}, function (text) {
-        setStatus(text || "Đã dừng ghi hình", "success");
+    postJson("/record_status", {status: "false"}, function (data, rawText) {
+        if (data && data.result === "stopped") {
+            setStatus("Đã dừng ghi hình", "success");
 
-        if (downloadLink) {
-            downloadLink.text = "Tải file ghi hình";
-            downloadLink.href = "./video.avi";
-            downloadLink.setAttribute("download", "video.avi");
+            if (downloadLink && data.file_url) {
+                downloadLink.text = "Tải file ghi hình";
+                downloadLink.href = data.file_url;
+                downloadLink.setAttribute("download", data.file_name || "video.avi");
+            }
+            return;
         }
+
+        setStatus(rawText || "Đã dừng ghi hình", "success");
     });
 };
 
@@ -69,8 +87,12 @@ buttonProcess.onclick = function () {
     buttonPause.disabled = false;
 
     setStatus("Đang bật nhận diện...", "");
-    postJson("/process_status", {status: "true"}, function (text) {
-        setStatus(text || "Đã bật nhận diện", "success");
+    postJson("/process_status", {status: "true"}, function (data, rawText) {
+        if (data && data.result === "process") {
+            setStatus("Đã bật nhận diện", "success");
+            return;
+        }
+        setStatus(rawText || "Đã bật nhận diện", "success");
     });
 };
 
@@ -79,8 +101,12 @@ buttonPause.onclick = function () {
     buttonPause.disabled = true;
 
     setStatus("Đang dừng nhận diện...", "");
-    postJson("/process_status", {status: "false"}, function (text) {
-        setStatus(text || "Đã dừng nhận diện", "success");
+    postJson("/process_status", {status: "false"}, function (data, rawText) {
+        if (data && data.result === "pause") {
+            setStatus("Đã dừng nhận diện", "success");
+            return;
+        }
+        setStatus(rawText || "Đã dừng nhận diện", "success");
     });
 };
 
