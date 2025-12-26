@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Flask RKNN Object Detection</title>
-    <script type="application/x-javascript"> addEventListener("load", function () {
+    <script type="application/x-javascript"> 
+    
+    addEventListener("load", function () {
         setTimeout(hideURLbar, 0);
     }, false);
 
     function hideURLbar() {
         window.scrollTo(0, 1);
-    } </script>
+    } 
+    </script>
     <link href="{{ url_for('static', filename='css/style.css') }}" rel='stylesheet' type='text/css'/>
     <!-- -->
     <link href='http://fonts.useso.com/css?family=PT+Sans:400,700,400italic,700italic|Oswald:400,300,700'
@@ -21,7 +24,8 @@
     <script src="http://ajax.useso.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 <body>
-<script>$(document).ready(function (c) {
+<script>
+$(document).ready(function (c) {
     $('.close').on('click', function (c) {
         $('.login-form').fadeOut('slow', function (c) {
             $('.login-form').remove();

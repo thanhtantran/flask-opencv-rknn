@@ -13,20 +13,19 @@ function setStatus(message, type) {
 
 function postJson(url, body, onSuccess) {
     var xhr = new XMLHttpRequest();
-    xhr.responseType = "json";
     xhr.onreadystatechange = function () {
         if (xhr.readyState !== 4) return;
 
+        var rawText = xhr.responseText || "";
+
         if (xhr.status >= 200 && xhr.status < 300) {
-            var data = xhr.response;
-            if (!data) {
-                try {
-                    data = JSON.parse(xhr.responseText);
-                } catch (e) {
-                    data = null;
-                }
+            var data = null;
+            try {
+                data = rawText ? JSON.parse(rawText) : null;
+            } catch (e) {
+                data = null;
             }
-            onSuccess(data, xhr.responseText);
+            onSuccess(data, rawText);
             return;
         }
 
@@ -34,6 +33,7 @@ function postJson(url, body, onSuccess) {
     };
     xhr.open("POST", url);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhr.setRequestHeader("Accept", "application/json");
     xhr.send(JSON.stringify(body));
 }
 
