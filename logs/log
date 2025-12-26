@@ -316,3 +316,115 @@ I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_intern
 I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 17:05:54] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
 I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 17:05:55] "GET /video_viewer HTTP/1.1" 200 -
 I /home/cat/miniforge3/envs/py3.10/lib/python3.10/site-packages/werkzeug/_internal.py:97 192.168.88.8 - - [02/Jul/2025 17:06:37] "POST /process_status HTTP/1.1" 200 -
+W /usr/lib/python3/dist-packages/werkzeug/_internal.py:225  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225  * Running on http://192.168.2.125:5000/ (Press CTRL+C to quit)
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:09] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:09] "GET /static/css/style.css HTTP/1.1" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:09] "GET /static/button_process.js HTTP/1.1" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:09] "GET /static/images/bg1.jpg HTTP/1.1" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:10] "[35m[1mGET /video_viewer HTTP/1.1[0m" 500 -
+E /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 Error on request:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 310, in execute
+    for data in application_iter:
+  File "/usr/lib/python3/dist-packages/werkzeug/wsgi.py", line 462, in __next__
+    return self._next()
+  File "/usr/lib/python3/dist-packages/werkzeug/wrappers/response.py", line 49, in _iter_encoded
+    for item in iterable:
+  File "/home/orangepi/flask-opencv-rknn/controller/modules/home/views.py", line 25, in video_stream
+    video_camera = VideoCamera()
+  File "/home/orangepi/flask-opencv-rknn/controller/utils/camera.py", line 37, in __init__
+    raise RuntimeError('Could not open video.')
+RuntimeError: Could not open video.
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:11] "[32mGET /logout HTTP/1.1[0m" 302 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:12] "GET /login HTTP/1.1" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:12] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:12] "GET /static/images/key.png HTTP/1.1" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:12] "GET /static/images/adm.png HTTP/1.1" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:12] "GET /static/images/pass.png HTTP/1.1" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:21] "POST /login HTTP/1.1" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:42] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:42] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:42] "[35m[1mGET /video_viewer HTTP/1.1[0m" 500 -
+E /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 Error on request:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 310, in execute
+    for data in application_iter:
+  File "/usr/lib/python3/dist-packages/werkzeug/wsgi.py", line 462, in __next__
+    return self._next()
+  File "/usr/lib/python3/dist-packages/werkzeug/wrappers/response.py", line 49, in _iter_encoded
+    for item in iterable:
+  File "/home/orangepi/flask-opencv-rknn/controller/modules/home/views.py", line 25, in video_stream
+    video_camera = VideoCamera()
+  File "/home/orangepi/flask-opencv-rknn/controller/utils/camera.py", line 37, in __init__
+    raise RuntimeError('Could not open video.')
+RuntimeError: Could not open video.
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:47] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:47] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:28:47] "[35m[1mGET /video_viewer HTTP/1.1[0m" 500 -
+E /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 Error on request:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 310, in execute
+    for data in application_iter:
+  File "/usr/lib/python3/dist-packages/werkzeug/wsgi.py", line 462, in __next__
+    return self._next()
+  File "/usr/lib/python3/dist-packages/werkzeug/wrappers/response.py", line 49, in _iter_encoded
+    for item in iterable:
+  File "/home/orangepi/flask-opencv-rknn/controller/modules/home/views.py", line 25, in video_stream
+    video_camera = VideoCamera()
+  File "/home/orangepi/flask-opencv-rknn/controller/utils/camera.py", line 37, in __init__
+    raise RuntimeError('Could not open video.')
+RuntimeError: Could not open video.
+W /usr/lib/python3/dist-packages/werkzeug/_internal.py:225  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225  * Running on http://192.168.2.125:5000/ (Press CTRL+C to quit)
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:29:37] "[32mGET /logout HTTP/1.1[0m" 302 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:29:38] "GET /login HTTP/1.1" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:29:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:29:40] "[32mPOST /login HTTP/1.1[0m" 302 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:29:41] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:29:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:29:41] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+W /usr/lib/python3/dist-packages/werkzeug/_internal.py:225  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225  * Running on http://192.168.2.125:5000/ (Press CTRL+C to quit)
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:36:13] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:36:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:36:13] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:36:13] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+W /usr/lib/python3/dist-packages/werkzeug/_internal.py:225  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225  * Running on http://192.168.2.125:5000/ (Press CTRL+C to quit)
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:38:53] "[32mGET /logout HTTP/1.1[0m" 302 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:38:53] "GET /login HTTP/1.1" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:38:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:38:54] "[36mGET /static/images/adm.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:38:54] "[36mGET /static/images/pass.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:38:54] "[36mGET /static/images/key.png HTTP/1.1[0m" 304 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:38:57] "[32mPOST /login HTTP/1.1[0m" 302 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:38:57] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:38:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:38:57] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:39:00] "GET /video_viewer HTTP/1.1" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:39:05] "POST /process_status HTTP/1.1" 200 -
+W /usr/lib/python3/dist-packages/werkzeug/_internal.py:225  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225  * Running on http://192.168.2.125:5000/ (Press CTRL+C to quit)
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:43:25] "GET / HTTP/1.1" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:43:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:43:25] "[36mGET /static/button_process.js HTTP/1.1[0m" 304 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:43:25] "[36mGET /static/images/bg1.jpg HTTP/1.1[0m" 304 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:43:26] "GET /video_viewer HTTP/1.1" 200 -
+I /usr/lib/python3/dist-packages/werkzeug/_internal.py:225 192.168.2.122 - - [26/Dec/2025 21:43:28] "POST /process_status HTTP/1.1" 200 -

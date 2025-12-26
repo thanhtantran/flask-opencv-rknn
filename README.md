@@ -17,6 +17,7 @@ git clone https://github.com/thanhtantran/flask-opencv-rknn && cd flask-opencv-r
 Install python pip and venv
 ```
 sudo apt install python3-venv python3-pip -y
+sudo apt install -y python3-opencv
 ```
 
 Check your python version
@@ -25,7 +26,7 @@ admin@orangepi3b:~$ python3 --version
 Python 3.10.12
 ```
 
-Download the specific rknn-toolkit-lite2 1.5.2 for your python version. (Pls note that new  rknn-toolkit-lite2 2.3.0 will not work since the model is converted base on old rknn-toolkit2)
+Download the specific rknn-toolkit-lite2 1.5.2 for your python version. (Pls note that newer rknn-toolkit-lite2 will not work since the model is converted base on old rknn-toolkit2)
 ```
 wget https://github.com/airockchip/rknn-toolkit2/raw/refs/heads/v1.5.2/rknn_toolkit_lite2/packages/rknn_toolkit_lite2-1.5.2-cp310-cp310-linux_aarch64.whl
 pip install rknn_toolkit_lite2-1.5.2-cp310-cp310-linux_aarch64.whl
@@ -36,6 +37,12 @@ Check rknn-toolkit-lite2 version
 ```
 admin@orangepi3b:~/flask-opencv-rknn$ pip list | grep rknn-toolkit-lite2
 rknn-toolkit-lite2    1.5.2
+```
+
+Create and download the model
+```
+mkdir models && cd models
+wget https://github.com/thanhtantran/rknn-single-thread-3566/raw/refs/heads/main/yolov5s.rknn
 ```
 
 Copy the library
