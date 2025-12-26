@@ -59,35 +59,43 @@ def video_viewer():
 # Ghi hinh
 @home_blu.route('/record_status', methods=['POST'])
 def record_status():
+    username = session.get("username")
+    if not username:
+        return jsonify(error="unauthorized"), 401
+
     global video_camera
     if video_camera is None:
         video_camera = VideoCamera()
-    json = request.get_json()
 
-    status = json['status']
+    payload = request.get_json(silent=True) or {}
+    status = payload.get('status')
 
     if status == "true":
-        video_camera.start_record()
-        return jsonify(result="started")  # Uncommented this line
-    else:
-        video_camera.stop_record()
-        return jsonify(result="stopped")  # Uncommented this line
+        file_name = video_camera.start_record()
+        return jsonify(result="started", file_name=file_name)
+
+    file_name = video_camera.stop_record()
+    file_url = url_for('static', filename=f"recordings/{file_name}") if file_name else None
+    return jsonify(result="stopped", file_name=file_name, file_url=file_url)
 
 
 # Nhan dien
 @home_blu.route('/process_status', methods=['POST'])
 def process_status():
+    username = session.get("username")
+    if not username:
+        return jsonify(error="unauthorized"), 401
+
     global video_camera
     if video_camera is None:
         video_camera = VideoCamera()
 
-    json = request.get_json()
-
-    process_status = json["status"]
+    payload = request.get_json(silent=True) or {}
+    process_status = payload.get("status")
 
     if process_status == "true":
         video_camera.start_process()
-        return jsonify(result="process")  # Uncommented this line
-    else:
-        video_camera.stop_process()
-        return jsonify(result="pause")
+        return jsonify(result="process")
+
+    video_camera.stop_process()
+    return jsonify(result="pause")
